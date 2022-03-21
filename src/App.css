@@ -1,17 +1,57 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-
+.scroll-to-top {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  bottom: 3.5rem;
+  right: 3.5rem;
+  animation: fadeIn 700ms ease-in-out 2s both;
+  cursor: pointer;
+  color: #ee2c74;
+  font-size: 25px; 
+  text-align: center;
+  overflow: hidden;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
+switch{
+  margin: auto;
+}
+.App{
+  display: center;
+  width: 100%;
+}
+@media only screen and (max-width: 426px){
+  .App{
+    width: 425px;
+  }
+}
+/*mobile < 740px */
+@media only screen and (max-width: 46.1875em) and (min-width: 427px){
+  .App{
+    width: 46.1875em;
+  }
+}
+/*tablet >= 740px , < 1024px */
+@media only screen and (max-width: 63.9375em) and (min-width:46.25em){
+  .App{
+    max-width: 63.9375em;
+    min-width: 46.25em;
+  }
+}
+
 
 .App-header {
   background-color: #282c34;
